@@ -2,8 +2,11 @@
   "name": "eduledger",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
-    "dev": "next dev --webpack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint"
@@ -16,15 +19,15 @@
     "@safe-global/safe-apps-sdk": "^9.1.0",
     "@tanstack/react-query": "^5.90.7",
     "@walletconnect/ethereum-provider": "^2.23.9",
-    "accounts": "^0.10.1",
+    "accounts": "0.10.7",
     "framer-motion": "^12.23.24",
     "jsonwebtoken": "^9.0.2",
-    "next": "^16.2.6",
+    "next": "16.2.6",
     "porto": "^0.2.37",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-icons": "^5.5.0",
-    "wagmi": "^3.6.15"
+    "wagmi": "3.6.17"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
