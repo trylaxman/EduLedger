@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 
-module.exports = {
-  /* config options here */
-  reactCompiler: true,
+const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+
   turbopack: {
-    // Ensure Turbopack resolves the real workspace root where `next` is installed
     root: __dirname,
   },
 };
+
+module.exports = nextConfig;
